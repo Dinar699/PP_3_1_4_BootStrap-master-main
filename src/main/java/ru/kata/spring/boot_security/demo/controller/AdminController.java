@@ -54,7 +54,7 @@ public class AdminController {
 //        theUser.setEmail(user.getEmail());
 //        theUser.setRoleList(user.getRoleList());
 //        theUser.setPassword(user.getPassword());
-        userService.update(user);
+        userService.update(user, id);
         return "redirect:/admin";
     }
 
